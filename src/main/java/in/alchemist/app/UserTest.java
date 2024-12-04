@@ -7,6 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class UserTest {
 //this is declaration approach
+//for programmatic approach we have to implement InitializingBean and DisposableBean Interfaces
     public static void main(String[] args) {
         ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
         UserDAO dao=context.getBean(UserDAO.class);
